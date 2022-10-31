@@ -8,7 +8,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class HngtaskApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
+
         SpringApplication.run(HngtaskApplication.class, args);
+//        final NgrokClient ngrokClient = new NgrokClient.Builder().build();
     }
 
 }
