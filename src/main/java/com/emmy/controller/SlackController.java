@@ -19,7 +19,7 @@ public class SlackController {
     private SocialDetailService socialDetailService;
 
     @GetMapping("/slack-details")
-    public List<SlackDetailsDTO> all_slack_details(){
+    public SlackDetailsDTO all_slack_details(){
         return socialDetailService.getAllSlackDetails();
     }
 

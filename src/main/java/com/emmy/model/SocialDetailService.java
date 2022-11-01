@@ -9,12 +9,12 @@ import java.util.List;
 
 @Service
 public class SocialDetailService {
-    private List<SlackDetailsDTO> slackDetailsDTOS = new ArrayList<>(Arrays.asList(new SlackDetailsDTO("emmyfaculty",
-            true,
-            25,
-            "HNG 9.0 Backend developer")));
 
-    public List<SlackDetailsDTO> getAllSlackDetails(){
+    public SlackDetailsDTO getAllSlackDetails(){
+        SlackDetailsDTO slackDetailsDTOS = new SlackDetailsDTO("emmyfaculty",
+                true,
+                25,
+                "HNG 9.0 Backend developer");
         return slackDetailsDTOS;
     }
 }
