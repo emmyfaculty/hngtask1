@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-//@RequestMapping("/api/slackdetails")
+@RequestMapping("/api")
 @CrossOrigin(origins = "*")
 public class SlackController {
 
     @Autowired
     private SocialDetailService socialDetailService;
 
-    @RequestMapping("/slackdetails")
+    @GetMapping("/slack-details")
     public List<SlackDetailsDTO> all_slack_details(){
         return socialDetailService.getAllSlackDetails();
     }
