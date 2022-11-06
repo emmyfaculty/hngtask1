@@ -24,8 +24,8 @@ public class SocialDetailService {
 
     public MathResponseDto doMath(DoMathDto doMathDto) {
         String operation_type = doMathDto.getOperation_type();
-        int xValue = doMathDto.getNum1();
-        int yValue = doMathDto.getNum2();
+        int xValue = doMathDto.getX();
+        int yValue = doMathDto.getY();
         int result = 0;
         if (operation_type.equalsIgnoreCase("ADDITION")){
             result = xValue + yValue;
